@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script>
+		var scores = [10,23,44,59,89,45,70,90];
+		var names = ['123','456','12','34','56'];
+		var mixed = ['123',10,'456',23];
+		scores[0] = 666;
+		function showArr(arr){
+		   var i = 0;
+		   while (i<arr.length){
+			 document.write(arr[i]+"<br>");
+			  i++;
+
+		}
+		document.write("<br>");
+	}
+	showArr(scores);
+	showArr(names);
+	showArr(mixed);
+	</script>
+</body>	
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+    </head>
+    <body>
+        <script>
+            function calculateArea(r) {
+                var area;
+                if(r<=0){
+                    return 0;
+                }else {
+                    area=Math.PI*r*r;
+                    return area;
+                }
+            }
+            var radius = 5.2;
+            var theArea=calculateArea(radius);
+            console.log("The area is:"+theArea)
+
+            function bake(degrees) {
+                var message;
+                if(degrees>500) {
+                    message="I'm not a nuclear reactor!";
+                }else if (degrees<100){
+                    message="I'm not a refrigerator!";
+                }else {
+                    message="That's a very comfortable temperature for me.";
+
+                }
+                return message;
+            }
+            var status=bake(350);
+            console.log(status)
+
+            function add(num1,num2){
+                return num1+num2;
+            }
+            var sum;
+            sum = add(39,39);
+            document.write(sum + "<br>")
+            sum = add(123,456);
+            document.write(sum + "<br>")
+
+
+
+        </script>
+    </body>
+</html>
